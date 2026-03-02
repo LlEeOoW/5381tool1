@@ -18,4 +18,4 @@ if (!file.exists("app_market.R")) stop("app_market.R not found. Set wd to the fo
 if (!file.exists(".env")) message("Warning: .env not found. Create .env with ALPHAVANTAGE_API_KEY=yourkey")
 
 message("Starting Daily Market app...")
-shiny::runApp(appDir = getwd(), appFile = "app_market.R", launch.browser = TRUE)
+shiny::runApp("app_market.R", launch.browser = TRUE)
